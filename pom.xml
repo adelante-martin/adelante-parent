@@ -5,7 +5,7 @@
     
     <groupId>au.com.adelante</groupId>
     <artifactId>adelante-parent</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
     <url>http://www.adelante.com.au/</url>
@@ -16,14 +16,27 @@
         <developerConnection>scm:svn:https://kangaroo/adelante/svn/adelante-parent/trunk</developerConnection>
     </scm>
     
+    <distributionManagement>
+      <repository>
+         <id>nexus</id>
+         <name>Internal Releases</name>
+         <url>http://emu:8080/nexus/content/repositories/releases/</url>
+      </repository>
+      <snapshotRepository>
+         <id>nexus</id>
+         <name>Internal Releases</name>
+         <url>http://emu:8080/nexus/content/repositories/snapshots/</url>
+      </snapshotRepository>
+    </distributionManagement>
+    
     <repositories>
         <repository>
+            <id>nexus</id>
+            <name>Adelante Nexus Repository</name>
+            <url>http://emu:8080/nexus/content/groups/public</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
-            <id>central</id>
-            <name>Maven Central Repository</name>
-            <url>http://repo1.maven.org/maven2</url>
         </repository>
     </repositories>
 
