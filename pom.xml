@@ -18,27 +18,35 @@
     
     <distributionManagement>
       <repository>
-         <id>nexus</id>
+         <id>nexus-private</id>
          <name>Internal Releases</name>
-         <url>http://emu:8080/nexus/content/repositories/releases/</url>
+         <url>http://nexus.adelante.com.au:8080/nexus/content/repositories/releases/</url>
       </repository>
       <snapshotRepository>
-         <id>nexus</id>
+         <id>nexus-private</id>
          <name>Internal Releases</name>
-         <url>http://emu:8080/nexus/content/repositories/snapshots/</url>
+         <url>http://nexus.adelante.com.au:8080/nexus/content/repositories/snapshots/</url>
       </snapshotRepository>
     </distributionManagement>
     
     <repositories>
         <repository>
-            <id>nexus</id>
-            <name>Adelante Nexus Repository</name>
-            <url>http://emu:8080/nexus/content/groups/public</url>
+            <id>nexus-public</id>
+            <name>Adelante Public Nexus Repository</name>
+            <url>http://nexus.adelante.com.au:8080/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>nexus-private</id>
+            <name>Adelante Private Nexus Repository</name>
+            <url>http://nexus.adelante.com.au:8080/nexus/content/groups/private</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-    </repositories>
+        </repositories>
 
     <build>
         <pluginManagement>
@@ -112,6 +120,18 @@
                 <artifactId>testng</artifactId>
                 <version>${testng.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.uncommons</groupId>
+                <artifactId>reportng</artifactId>
+                <version>${reportng.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.testng</groupId>
+                        <artifactId>testng</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
@@ -239,6 +259,7 @@
         <mockito-all.version>1.9.5</mockito-all.version>
         <org.apache.commons.collections.version>3.2.1</org.apache.commons.collections.version>
         <testng.version>6.8.8</testng.version>
+        <reportng.version>1.1.2</reportng.version>
         <maven-site-plugin.version>3.0</maven-site-plugin.version>
         <maven-surefire-plugin.version>2.5</maven-surefire-plugin.version>
     </properties>
