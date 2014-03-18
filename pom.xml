@@ -13,19 +13,19 @@
         <!-- 
         <developerConnection>scm:svn:https://www.adelante.com.au/svn/adelante-parent/trunk</developerConnection>
          -->
-        <developerConnection>scm:svn:https://kangaroo/adelante/svn/adelante-parent/trunk</developerConnection>
+        <developerConnection>scm:svn:https://kangaroo.adelante.com.au/adelante/svn/adelante-parent/trunk</developerConnection>
     </scm>
     
     <distributionManagement>
       <repository>
          <id>nexus-private</id>
          <name>Internal Releases</name>
-         <url>http://nexus.adelante.com.au:8080/nexus/content/repositories/releases/</url>
+         <url>https://nexus.adelante.com.au/nexus/content/repositories/releases/</url>
       </repository>
       <snapshotRepository>
          <id>nexus-private</id>
          <name>Internal Releases</name>
-         <url>http://nexus.adelante.com.au:8080/nexus/content/repositories/snapshots/</url>
+         <url>https://nexus.adelante.com.au/nexus/content/repositories/snapshots/</url>
       </snapshotRepository>
     </distributionManagement>
     
@@ -33,7 +33,7 @@
         <repository>
             <id>nexus-public</id>
             <name>Adelante Public Nexus Repository</name>
-            <url>http://nexus.adelante.com.au:8080/nexus/content/groups/public</url>
+            <url>https://nexus.adelante.com.au/nexus/content/groups/public</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -41,7 +41,7 @@
         <repository>
             <id>nexus-private</id>
             <name>Adelante Private Nexus Repository</name>
-            <url>http://nexus.adelante.com.au:8080/nexus/content/groups/private</url>
+            <url>https://nexus.adelante.com.au/nexus/content/groups/private</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
