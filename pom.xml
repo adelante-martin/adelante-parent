@@ -17,12 +17,12 @@
       <repository>
          <id>nexus-private</id>
          <name>Internal Releases</name>
-         <url>http://adelante.com.au/nexus/content/repositories/releases/</url>
+         <url>http://nexus.adelante.com.au/nexus/content/repositories/releases/</url>
       </repository>
       <snapshotRepository>
          <id>nexus-private</id>
          <name>Internal Releases</name>
-         <url>http://adelante.com.au/nexus/content/repositories/snapshots/</url>
+         <url>http://nexus.adelante.com.au/nexus/content/repositories/snapshots/</url>
       </snapshotRepository>
     </distributionManagement>
     
@@ -30,7 +30,7 @@
         <repository>
             <id>nexus-public</id>
             <name>Adelante Public Nexus Repository</name>
-            <url>http://adelante.com.au/nexus/content/groups/public</url>
+            <url>http://nexus.adelante.com.au/nexus/content/groups/public</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -38,7 +38,7 @@
         <repository>
             <id>nexus-private</id>
             <name>Adelante Private Nexus Repository</name>
-            <url>http://adelante.com.au/nexus/content/groups/adelante</url>
+            <url>http://nexus.adelante.com.au/nexus/content/groups/adelante</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
