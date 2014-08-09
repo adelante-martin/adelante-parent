@@ -32,7 +32,7 @@
             <name>Adelante Nexus Repository</name>
             <url>http://adelante.com.au/nexus/content/groups/public</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
