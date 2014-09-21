@@ -5,7 +5,7 @@
     
     <groupId>au.com.adelante</groupId>
     <artifactId>adelante-parent</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
     <url>http://www.adelante.com.au/</url>
@@ -18,28 +18,27 @@
         <java.version>1.7</java.version>
         
         <cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
-        <commons-lang3.version>3.2.1</commons-lang3.version>
-        <commons-beanutils.version>1.9.1</commons-beanutils.version>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <commons-beanutils.version>1.9.2</commons-beanutils.version>
         <commons-configuration.version>1.10</commons-configuration.version>
         <easymock.version>3.2</easymock.version>
         <emma-maven-plugin.version>1.0-alpha-3</emma-maven-plugin.version>
-        <findbugs-maven-plugin.version>2.5.3</findbugs-maven-plugin.version>
+        <findbugs-maven-plugin.version>3.0.0</findbugs-maven-plugin.version>
         <jboss-logging.version>3.1.4.GA</jboss-logging.version>
-        <maven-checkstyle-plugin.version>2.11</maven-checkstyle-plugin.version>
+        <maven-checkstyle-plugin.version>2.12.1</maven-checkstyle-plugin.version>
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
         <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
         <maven-jxr-plugin.version>2.4</maven-jxr-plugin.version>
-        <maven-pmd-plugin.version>3.0.1</maven-pmd-plugin.version>
+        <maven-pmd-plugin.version>3.2</maven-pmd-plugin.version>
         <maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
-        <maven-release-plugin.version>2.4.2</maven-release-plugin.version>
-        <maven-surefire-report-plugin.version>2.16</maven-surefire-report-plugin.version>
-        <maven-release-plugin.version>2.4.2</maven-release-plugin.version>
+        <maven-surefire-report-plugin.version>2.17</maven-surefire-report-plugin.version>
+        <maven-release-plugin.version>2.5</maven-release-plugin.version>
         <mockito-all.version>1.9.5</mockito-all.version>
         <org.apache.commons.collections.version>3.2.1</org.apache.commons.collections.version>
         <testng.version>6.8.8</testng.version>
-        <reportng.version>1.1.2</reportng.version>
-        <maven-site-plugin.version>3.0</maven-site-plugin.version>
-        <maven-surefire-plugin.version>2.5</maven-surefire-plugin.version>
+        <reportng.version>1.1.4</reportng.version>
+        <maven-site-plugin.version>3.4</maven-site-plugin.version>
+        <maven-surefire-plugin.version>2.17</maven-surefire-plugin.version>
     </properties>
     
     <distributionManagement>
@@ -65,11 +64,25 @@
             </snapshots>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus</id>
+            <name>Adelante Nexus Repository</name>
+            <url>http://adelante.com.au/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
                     <configuration>
