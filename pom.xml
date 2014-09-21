@@ -45,12 +45,12 @@
       <repository>
          <id>nexus</id>
          <name>Adelante Releases</name>
-         <url>http://adelante.com.au/nexus/content/repositories/releases</url>
+         <url>https://adelante.com.au/nexus/content/repositories/releases</url>
       </repository>
       <snapshotRepository>
          <id>nexus</id>
          <name>Adelante Snapshots</name>
-         <url>http://adelante.com.au/nexus/content/repositories/snapshots</url>
+         <url>https://adelante.com.au/nexus/content/repositories/snapshots</url>
       </snapshotRepository>
     </distributionManagement>
     
@@ -58,7 +58,7 @@
         <repository>
             <id>nexus</id>
             <name>Adelante Nexus Repository</name>
-            <url>http://adelante.com.au/nexus/content/groups/public</url>
+            <url>https://adelante.com.au/nexus/content/groups/public</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -68,7 +68,7 @@
         <pluginRepository>
             <id>nexus</id>
             <name>Adelante Nexus Repository</name>
-            <url>http://adelante.com.au/nexus/content/groups/public</url>
+            <url>https://adelante.com.au/nexus/content/groups/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
