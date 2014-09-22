@@ -1,22 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>au.com.adelante</groupId>
     <artifactId>adelante-parent</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <packaging>pom</packaging>
+    <name>Adelante Parent POM</name>
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
     <url>http://www.adelante.com.au/</url>
     <scm>
         <developerConnection>scm:svn:https://adelante.com.au/adelante/svn/adelante-parent/trunk</developerConnection>
     </scm>
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>
-        
+
         <cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-beanutils.version>1.9.2</commons-beanutils.version>
@@ -40,25 +41,41 @@
         <maven-site-plugin.version>3.4</maven-site-plugin.version>
         <maven-surefire-plugin.version>2.17</maven-surefire-plugin.version>
     </properties>
-    
+
     <distributionManagement>
-      <repository>
-         <id>nexus</id>
-         <name>Adelante Releases</name>
-         <url>https://adelante.com.au/nexus/content/repositories/releases</url>
-      </repository>
-      <snapshotRepository>
-         <id>nexus</id>
-         <name>Adelante Snapshots</name>
-         <url>https://adelante.com.au/nexus/content/repositories/snapshots</url>
-      </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Adelante Releases</name>
+            <url>https://adelante.com.au/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Adelante Snapshots</name>
+            <url>https://adelante.com.au/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
-    
+
     <repositories>
         <repository>
             <id>nexus</id>
             <name>Adelante Nexus Repository</name>
             <url>https://adelante.com.au/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Adelante Releases</name>
+            <url>https://adelante.com.au/nexus/content/repositories/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>nexus-snapshots</id>
+            <name>Adelante Snapshots</name>
+            <url>https://adelante.com.au/nexus/content/repositories/snapshots</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -215,18 +232,15 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>${maven-surefire-report-plugin.version}</version>
             </plugin>
-            <!-- 
-             -->
+            <!-- -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>emma-maven-plugin</artifactId>
                 <version>${emma-maven-plugin.version}</version>
                 <inherited>true</inherited>
             </plugin>
-            <!-- [WARNING] Unable to process class com/ibm/icu/impl/data/LocaleElements_zh__PINYIN.class
-                 in JarAnalyzer File /home/martin/.m2/repository/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.jar
-                 org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 60
-             -->
+            <!-- [WARNING] Unable to process class com/ibm/icu/impl/data/LocaleElements_zh__PINYIN.class in JarAnalyzer File /home/martin/.m2/repository/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.jar 
+                org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 60 -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
@@ -238,8 +252,7 @@
                     </formats>
                 </configuration>
             </plugin>
-            <!-- maven-checkstyle-plugin 10 uses Checkstyle 5.6 which fails to parse Java 7 try-with-resource statements
-             -->
+            <!-- maven-checkstyle-plugin 10 uses Checkstyle 5.6 which fails to parse Java 7 try-with-resource statements -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
