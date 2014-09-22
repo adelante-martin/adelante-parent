@@ -5,7 +5,7 @@
 
     <groupId>au.com.adelante</groupId>
     <artifactId>adelante-parent</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Adelante Parent POM</name>
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
@@ -57,14 +57,6 @@
 
     <repositories>
         <repository>
-            <id>nexus</id>
-            <name>Adelante Nexus Repository</name>
-            <url>https://adelante.com.au/nexus/content/groups/public</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
             <id>nexus-releases</id>
             <name>Adelante Releases</name>
             <url>https://adelante.com.au/nexus/content/repositories/releases</url>
@@ -76,6 +68,14 @@
             <id>nexus-snapshots</id>
             <name>Adelante Snapshots</name>
             <url>https://adelante.com.au/nexus/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>nexus</id>
+            <name>Adelante Nexus Repository</name>
+            <url>https://adelante.com.au/nexus/content/groups/public</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
