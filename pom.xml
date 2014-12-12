@@ -6,7 +6,7 @@
 
     <groupId>au.com.adelante</groupId>
     <artifactId>adelante-parent</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5</version>
     <packaging>pom</packaging>
     <name>Adelante Parent POM</name>
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
@@ -23,24 +23,23 @@
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-beanutils.version>1.9.2</commons-beanutils.version>
         <commons-configuration.version>1.10</commons-configuration.version>
-        <easymock.version>3.2</easymock.version>
-        <emma-maven-plugin.version>1.0-alpha-3</emma-maven-plugin.version>
+        <easymock.version>3.3</easymock.version>
         <findbugs-maven-plugin.version>3.0.0</findbugs-maven-plugin.version>
-        <jboss-logging.version>3.1.4.GA</jboss-logging.version>
-        <maven-checkstyle-plugin.version>2.12.1</maven-checkstyle-plugin.version>
-        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
-        <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
-        <maven-jxr-plugin.version>2.4</maven-jxr-plugin.version>
-        <maven-pmd-plugin.version>3.2</maven-pmd-plugin.version>
+        <jboss-logging.version>3.2.0,Final</jboss-logging.version>
+        <maven-checkstyle-plugin.version>2.13</maven-checkstyle-plugin.version>
+        <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
+        <maven-javadoc-plugin.version>2.10.1</maven-javadoc-plugin.version>
+        <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
+        <maven-pmd-plugin.version>3.3</maven-pmd-plugin.version>
         <maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
-        <maven-surefire-report-plugin.version>2.17</maven-surefire-report-plugin.version>
-        <maven-release-plugin.version>2.5</maven-release-plugin.version>
-        <mockito-all.version>1.9.5</mockito-all.version>
+        <maven-surefire-report-plugin.version>2.18</maven-surefire-report-plugin.version>
+        <maven-release-plugin.version>2.5.1</maven-release-plugin.version>
+        <mockito-all.version>1.10.8</mockito-all.version>
         <org.apache.commons.collections.version>3.2.1</org.apache.commons.collections.version>
         <testng.version>6.8.8</testng.version>
         <reportng.version>1.1.4</reportng.version>
         <maven-site-plugin.version>3.4</maven-site-plugin.version>
-        <maven-surefire-plugin.version>2.17</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>2.18</maven-surefire-plugin.version>
     </properties>
 
     <distributionManagement>
@@ -80,6 +79,7 @@
             </snapshots>
         </repository>
     </repositories>
+    
     <pluginRepositories>
         <pluginRepository>
             <id>nexus-public</id>
@@ -230,13 +230,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>${maven-surefire-report-plugin.version}</version>
-            </plugin>
-            <!-- -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>emma-maven-plugin</artifactId>
-                <version>${emma-maven-plugin.version}</version>
-                <inherited>true</inherited>
             </plugin>
             <!-- [WARNING] Unable to process class com/ibm/icu/impl/data/LocaleElements_zh__PINYIN.class in JarAnalyzer File /home/martin/.m2/repository/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.jar 
                 org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 60 -->
