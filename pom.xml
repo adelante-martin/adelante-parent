@@ -25,7 +25,7 @@
         <commons-configuration.version>1.10</commons-configuration.version>
         <easymock.version>3.3</easymock.version>
         <findbugs-maven-plugin.version>3.0.0</findbugs-maven-plugin.version>
-        <jboss-logging.version>3.2.0,Final</jboss-logging.version>
+        <jboss-logging.version>3.2.0.Final</jboss-logging.version>
         <maven-checkstyle-plugin.version>2.13</maven-checkstyle-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
         <maven-javadoc-plugin.version>2.10.1</maven-javadoc-plugin.version>
