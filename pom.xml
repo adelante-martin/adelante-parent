@@ -4,15 +4,15 @@
 
     <groupId>au.com.adelante</groupId>
     <artifactId>adelante-parent</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Adelante Parent POM</name>
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
     <url>http://www.adelante.xyz/</url>
     <scm>
-        <url>https://nexus.adelante.xyz/adelante/svn/adelante-parent/tags/adelante-parent-0.1.2</url>
-        <connection>scm:svn:https://nexus.adelante.xyz/adelante/svn/adelante-parent/tags/adelante-parent-0.1.2</connection>
-        <developerConnection>scm:svn:https://nexus.adelante.xyz/adelante/svn/adelante-parent/tags/adelante-parent-0.1.2</developerConnection>
+        <url>https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</url>
+        <connection>scm:svn:https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</connection>
+        <developerConnection>scm:svn:https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</developerConnection>
     </scm>
 
     <properties>
