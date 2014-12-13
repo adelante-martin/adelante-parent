@@ -17,7 +17,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.scm.id>svn-adelante<project.scm.id>
+        <project.scm.id>svn-adelante</project.scm.id>
         <java.version>1.7</java.version>
 
         <cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
