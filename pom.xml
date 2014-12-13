@@ -10,6 +10,8 @@
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
     <url>http://www.adelante.xyz/</url>
     <scm>
+        <url>https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</url>
+        <connection>scm:svn:https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</connection>
         <developerConnection>scm:svn:https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</developerConnection>
     </scm>
 
