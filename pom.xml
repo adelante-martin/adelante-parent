@@ -6,7 +6,7 @@
 
     <groupId>au.com.adelante</groupId>
     <artifactId>adelante-parent</artifactId>
-    <version>0.0.5</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Adelante Parent POM</name>
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
