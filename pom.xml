@@ -8,11 +8,11 @@
     <packaging>pom</packaging>
     <name>Adelante Parent POM</name>
     <description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
-    <url>http://www.adelante.xyz/</url>
+    <url>http://www.adelante.com.au/</url>
     <scm>
-        <url>https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</url>
-        <connection>scm:svn:https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</connection>
-        <developerConnection>scm:svn:https://nexus.adelante.xyz/adelante/svn/adelante-parent/trunk</developerConnection>
+        <url>https://adelante.com.au/adelante/svn/adelante-parent/trunk</url>
+        <connection>scm:svn:https://adelante.com.au/adelante/svn/adelante-parent/trunk</connection>
+        <developerConnection>scm:svn:https://adelante.com.au/adelante/svn/adelante-parent/trunk</developerConnection>
     </scm>
 
     <properties>
@@ -47,12 +47,12 @@
         <repository>
             <id>nexus-releases</id>
             <name>Adelante Releases</name>
-            <url>https://nexus.adelante.xyz/nexus/content/repositories/releases</url>
+            <url>https://adelante.com.au/nexus/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <name>Adelante Snapshots</name>
-            <url>https://nexus.adelante.xyz/nexus/content/repositories/snapshots</url>
+            <url>https://adelante.com.au/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -60,7 +60,7 @@
         <repository>
             <id>nexus-public</id>
             <name>Adelante Public Nexus Repository</name>
-            <url>https://nexus.adelante.xyz/nexus/content/groups/public</url>
+            <url>https://adelante.com.au/nexus/content/groups/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -71,7 +71,7 @@
         <repository>
             <id>nexus-adelante</id>
             <name>Adelante Snapshots</name>
-            <url>https://nexus.adelante.xyz/nexus/content/groups/adelante</url>
+            <url>https://adelante.com.au/nexus/content/groups/adelante</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -85,7 +85,7 @@
         <pluginRepository>
             <id>nexus-public</id>
             <name>Adelante Nexus Repository</name>
-            <url>https://nexus.adelante.xyz/nexus/content/groups/public</url>
+            <url>https://adelante.com.au/nexus/content/groups/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
