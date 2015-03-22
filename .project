@@ -2,7 +2,8 @@
 <projectDescription>
 	<name>adelante-parent</name>
 	<comment></comment>
-	<projects></projects>
+	<projects>
+	</projects>
 	<buildSpec>
 		<buildCommand>
 			<name>org.eclipse.m2e.core.maven2Builder</name>
