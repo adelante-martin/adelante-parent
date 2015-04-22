@@ -28,6 +28,7 @@
         <maven-checkstyle-plugin.version>2.15</maven-checkstyle-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
         <maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
+        <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
         <maven-javadoc-plugin.version>2.10.2</maven-javadoc-plugin.version>
         <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
         <maven-pmd-plugin.version>3.4</maven-pmd-plugin.version>
@@ -112,6 +113,11 @@
                         <target>${java.version}</target>
                     </configuration>
                 </plugin>
+	            <plugin>
+	                <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-install-plugin</artifactId>
+	                <version>${maven-install-plugin.version}</version>
+	            </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
