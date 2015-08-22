@@ -49,6 +49,7 @@
 	</properties>
 
 	<!-- Adelante Nexus
+	 -->
 	<distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
@@ -89,10 +90,8 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-	 -->
 
 <!-- Central
- -->
     <repositories>
         <repository>
             <id>central</id>
@@ -120,6 +119,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+ -->
 
 	<build>
 		<pluginManagement>
