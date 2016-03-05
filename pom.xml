@@ -30,7 +30,6 @@
 		<maven-checkstyle-plugin.version>2.15</maven-checkstyle-plugin.version>
 		<maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
         <maven-ear-plugin.version>2.10.1</maven-ear-plugin.version>
-		<maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
 		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
         <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
 		<maven-javadoc-plugin.version>2.10.2</maven-javadoc-plugin.version>
@@ -126,15 +125,6 @@
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-eclipse-plugin</artifactId>
-					<version>${maven-eclipse-plugin.version}</version>
-					<configuration>
-						<source>${java.version}</source>
-						<target>${java.version}</target>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>${maven-resources-plugin.version}</version>
 				</plugin>
@@ -197,10 +187,6 @@
 		</pluginManagement>
 
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
