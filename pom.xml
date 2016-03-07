@@ -24,6 +24,7 @@
 	</properties>
 
 	<!-- Adelante Nexus
+	 -->
 	<distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
@@ -64,10 +65,8 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-	 -->
 
 <!-- Central - for when Adelante Nexus is unreachable
- -->
     <repositories>
         <repository>
             <id>central</id>
@@ -95,6 +94,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+ -->
 
 	<build>
 		<pluginManagement>
