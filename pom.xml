@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>au.com.adelante</groupId>
 	<artifactId>adelante-parent</artifactId>
-	<version>0.1.6-SNAPSHOT</version>
+	<version>0.1.6</version>
 	<packaging>pom</packaging>
 	<name>adelante-parent</name>
 	<description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
 	<url>https://nexus.adelante.com.au/trac/wiki/AdelanteParent</url>
 	<scm>
-		<url>https://nexus.adelante.com.au/svn/adelante-parent/trunk</url>
-		<connection>scm:svn:https://nexus.adelante.com.au/svn/adelante-parent/trunk</connection>
-		<developerConnection>scm:svn:https://nexus.adelante.com.au/svn/adelante-parent/trunk</developerConnection>
+		<url>https://nexus.adelante.com.au/svn/adelante-parent/tags/0.1.6</url>
+		<connection>scm:svn:https://nexus.adelante.com.au/svn/adelante-parent/tags/0.1.6</connection>
+		<developerConnection>scm:svn:https://nexus.adelante.com.au/svn/adelante-parent/tags/0.1.6</developerConnection>
 	</scm>
 
 	<properties>
