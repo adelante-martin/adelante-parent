@@ -4,15 +4,15 @@
 
 	<groupId>services.adelante</groupId>
 	<artifactId>adelante-parent</artifactId>
-	<version>0.2.1-SNAPSHOT</version>
+	<version>0.2.1</version>
 	<packaging>pom</packaging>
 	<name>adelante-parent</name>
 	<description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
 	<url>https://nexus.adelante.services/trac/wiki/AdelanteParent</url>
 	<scm>
-		<url>https://nexus.adelante.services/svn/adelante-parent/trunk</url>
-		<connection>scm:svn:https://nexus.adelante.services/svn/adelante-parent/trunk</connection>
-		<developerConnection>scm:svn:https://nexus.adelante.services/svn/adelante-parent/trunk</developerConnection>
+		<url>https://nexus.adelante.services/svn/adelante-parent/tags/0.2.1</url>
+		<connection>scm:svn:https://nexus.adelante.services/svn/adelante-parent/tags/0.2.1</connection>
+		<developerConnection>scm:svn:https://nexus.adelante.services/svn/adelante-parent/tags/0.2.1</developerConnection>
 	</scm>
 
 	<properties>
