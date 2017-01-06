@@ -10,9 +10,8 @@
 	<description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
 	<url>https://nexus.adelante.services/trac/wiki/AdelanteParent</url>
 	<scm>
-		<url>https://nexus.adelante.services/svn/adelante-parent/trunk</url>
-		<connection>scm:svn:https://nexus.adelante.services/svn/adelante-parent/trunk</connection>
-		<developerConnection>scm:svn:https://nexus.adelante.services/svn/adelante-parent/trunk</developerConnection>
+        <url>https://git.adelante.services/?p=adelante-parent.git</url>
+        <developerConnection>scm:git:ssh://nexus.adelante.services:8085/var/lib/git/adelante-parent.git</developerConnection>
 	</scm>
 
 	<properties>
