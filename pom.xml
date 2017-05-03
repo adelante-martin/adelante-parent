@@ -8,10 +8,10 @@
 	<packaging>pom</packaging>
 	<name>adelante-parent</name>
 	<description>Contains the top parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc</description>
-	<url>https://nexus.adelante.services/trac/wiki/AdelanteParent</url>
+	<url>https://github.com/adelanteservices/adelante-parent/wiki</url>
 	<scm>
-        <url>https://git.adelante.services/?p=adelante-parent.git</url>
-        <developerConnection>scm:git:ssh://nexus.adelante.services:8085/var/lib/git/adelante-parent.git</developerConnection>
+        <url>https://github.com/adelanteservices/adelante-parent.git</url>
+        <developerConnection>scm:git:https://github.com/adelanteservices/adelante-parent.git</developerConnection>
 	</scm>
 
 	<properties>
