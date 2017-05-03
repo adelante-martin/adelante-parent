@@ -1,2 +1,2 @@
 # adelante-parent
-Top-level Maven parent POM for all Adelante projects.
+Contains the top-level parent POM for all Adelante projects with common dependencies, versions, plugins, reports etc
